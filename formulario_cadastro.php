@@ -4,7 +4,7 @@
     <title>Formulário de Cadastro</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -21,9 +21,14 @@
             <br><br>
 
             <button type="submit" value="Cadastrar">Cadastrar</button>
-            </form>
+            <br><br>
+
+            <a href="editar.php">Editar</a><a href="index.php">Inicio</a>
+        </form>
 
     </div>
+
+
 
 </body>
 </html>

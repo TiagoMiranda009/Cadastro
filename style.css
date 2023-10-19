@@ -33,7 +33,7 @@ input {
 }
 
 button {
-    background-color: aqua;
+    background-color: rgb(26, 71, 71);
     border: none;
     padding: 15px;
     width: 100%;

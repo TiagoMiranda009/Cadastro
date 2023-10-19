@@ -1,4 +1,7 @@
 <?php
+
+require_once 'conexaobd.php';
+
 class Pessoa {
     private $nome;
     private $cpf;
@@ -28,6 +31,8 @@ class Pessoa {
 
         $conn = new mysqli($servername, $username, $password, $dbname);
 
+
+
         // Verificar a conexão
         if ($conn->connect_error) {
             die("Conexão com o banco de dados falhou: " . $conn->connect_error);
@@ -41,6 +46,7 @@ class Pessoa {
 
         if ($conn->query($sql) === TRUE) {
             echo "<p>Cadastro realizado com sucesso!</p>";
+            
         } else {
             echo "Erro: " . $sql . "<br>" . $conn->error;
         }
@@ -48,4 +54,4 @@ class Pessoa {
         $conn->close();
     }
 }
-?>
+
