@@ -23,7 +23,7 @@
             <button type="submit" value="Cadastrar">Cadastrar</button>
             <br><br>
 
-            <a href="editar.php">Editar</a><a href="index.php">Inicio</a>
+            <a href="editar.php">Editar </a><a href="index.php"> Inicio</a><a href="formulario_listagem.php"> Listar</a>
         </form>
 
     </div>

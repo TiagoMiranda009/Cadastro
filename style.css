@@ -47,3 +47,19 @@ button:hover {
     cursor: pointer;
 
 }
+
+a {
+    background-color: rgb(26, 71, 71);
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+}
+
+a:hover {
+    background-color: deepskyblue;
+    cursor: pointer;
+
+}

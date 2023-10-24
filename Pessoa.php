@@ -5,6 +5,9 @@ require_once 'conexaobd.php';
 class Pessoa {
     private $nome;
     private $cpf;
+    public $id;
+    private $conn;
+    private $table_name = "pessoas";
 
     public function setNome($nome) {
         $this->nome = $nome;
@@ -52,6 +55,20 @@ class Pessoa {
         }
 
         $conn->close();
+    }
+
+    public function __construct($db) {
+        $this->conn = $db;
+    }
+
+
+    public function listarPessoas() {
+        $query = "SELECT id, nome, cpf FROM " . $this->table_name;
+
+        $stmt = $this->conn->prepare($query);
+        $stmt->execute();
+
+        return $stmt->fetchAll();
     }
 }
 
